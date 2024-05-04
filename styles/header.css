@@ -1,0 +1,152 @@
+.header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+
+
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-color:rgb(228, 228, 228) ;
+}
+
+.left-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+}
+
+    #menu-bar{
+        margin-top: 8px;
+        width: 24px;
+        object-position: center;
+        height: 24px;
+       
+    }
+    .youtube-icon{
+        
+        margin-left: 20px;
+        height: 40px;
+        
+    }
+
+
+.middle-section{
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+
+    .search-box::placeholder{
+        font-size: 14px;
+    }
+    .search-box{
+        box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05);
+        border-radius: 2px;
+        width: 0px;
+        height: 36px;
+        flex: 1;
+        padding-left: 10px;
+        font-size: 16px;
+      
+        border: 1px solid rgb(192, 192, 192);
+    }
+
+   
+    #magnifine{
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        background-color:rgb(240, 240, 240) ;
+        border-width: 1px;
+        /* border-style:solid ; */
+        height: 12px;
+        width: 20px;
+        position: relative;
+    }
+
+ .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 8px;
+    border-radius: 2px; 
+    font-size: 12px;
+    bottom: -25px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    /* pointer-events: none; */
+
+}
+:hover.tooltip{
+  opacity: 1;  
+}
+ 
+    #fa-microphone{
+        margin-left: 2px;
+        margin-right:2px ;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        height: 12px;
+        width: 20px;
+    }
+
+
+.right-section{
+    flex-shrink: 0;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+#video-creater{
+    margin-top: 10px;
+    height:24px;
+}
+
+
+
+.notification-icon{
+    position: relative;
+}
+
+.notification-number{
+   position:absolute; 
+   background-color: red;
+   color: white;
+   font-size: 11px;
+   padding-left:6px;
+   padding-right: 6px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   top: -5px;
+   right: -10px;
+   border-radius: 10px;
+}
+
+.notification-bell{
+   
+    height:30px;
+}
+
+.account-image{
+    height: 40px;
+    border-radius: 20px;
+}
